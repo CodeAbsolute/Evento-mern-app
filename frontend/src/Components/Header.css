@@ -1,0 +1,80 @@
+:root {
+  --main-color: #3867d6;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  background: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 9%;
+  max-height: 50px;
+}
+
+.header .logo {
+  font-weight: bolder;
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.header .logo span {
+  color: #3867d6;
+}
+
+.header .navbar a {
+  font-size: 1.3rem;
+  color: #fff;
+  margin-left: 2rem;
+  text-decoration: none;
+}
+
+.header .navbar a:hover {
+  color: #3867d6;
+}
+
+#menu-bars {
+  font-size: 1.3rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 768px) {
+  #menu-bars {
+    display: initial;
+  }
+  .header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border-top: 0.1rem solid #222;
+    background: #333;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  .header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .header .navbar a {
+    display: flex;
+    background: #222;
+    border-radius: 0.5rem;
+    padding: 1.3rem;
+    margin: 1.3rem;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+
+  .home .content h3 {
+    font-size: 4rem;
+  }
+  .fa-times {
+    transform: rotate(180deg);
+  }
+}
