@@ -55,8 +55,7 @@ export default function Login({ history }) {
               sm={4}
               md={7}
               sx={{
-                backgroundImage:
-                  "url(https://source.unsplash.com/random/events)",
+                backgroundImage: "url(/images/g-2.jpg)",
                 backgroundRepeat: "no-repeat",
                 backgroundColor: (t) =>
                   t.palette.mode === "light"

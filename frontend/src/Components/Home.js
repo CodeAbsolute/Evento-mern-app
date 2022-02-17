@@ -2,6 +2,7 @@ import React from "react";
 import Events from "./Events";
 import Header from "./Header";
 import "./Home.css";
+import Footer from "./Footer";
 const Home = () => {
   console.log("home");
 
@@ -24,6 +25,7 @@ const Home = () => {
         </div>
         <Events />
       </div>
+      <Footer />
     </>
   );
 };

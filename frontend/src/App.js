@@ -27,7 +27,6 @@ function App() {
         <ProtectedRoute exact path="/events/me" component={MyEvents} />
         <ProtectedRoute exact path="/events/add" component={AddEvent} />
       </Switch>
-      <Footer />
     </Router>
   );
 }

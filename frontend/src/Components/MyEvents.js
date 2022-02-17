@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getMyEvents } from "../Actions/eventAction";
 import Header from "./Header";
 import Loader from "./Loader";
-
+import Footer from "./Footer";
 export default function MyEvents() {
   const dispatch = useDispatch();
   const { events, loading } = useSelector((state) => state.myevents);
@@ -49,6 +49,7 @@ export default function MyEvents() {
                 return <Event key={event._id} event={event} />;
               })}
           </div>
+          <Footer />
         </>
       )}
     </>

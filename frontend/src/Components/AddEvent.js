@@ -16,6 +16,7 @@ import { clearErrors, createEvent } from "../Actions/eventAction";
 import Header from "./Header";
 import AddCircleIcon from "@mui/icons-material/AddCircle";
 import Loader from "./Loader";
+import Footer from "./Footer";
 const theme = createTheme();
 
 export default function AddEvent({ history }) {
@@ -215,6 +216,7 @@ export default function AddEvent({ history }) {
               </Box>
             </Grid>
           </ThemeProvider>
+          <Footer />
         </>
       )}
     </>
